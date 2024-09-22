@@ -1,0 +1,444 @@
+
+/* CSS UNTUK => DATA PEMEBELI( PEMBELI.PHP ) */
+
+/*=============================================
+                Pembeli design 
+    =========================================*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: #333333;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: #333333;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input {
+    margin: 5px;
+}
+
+#total {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+input[type="text"] {
+    width: 150px;
+}
+
+.btn-hapus {
+    background: none;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-hapus:hover {
+    color: black;
+}
+
+.details-control {
+    cursor: pointer;
+}
+
+.subtable {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 0;
+    width: 100%;
+}
+
+.subtable table td {
+    padding: 5px;
+}
+
+.left-section {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.right-section {
+    float: right;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.judul-kalkulator {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.card-kalkulator {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    overflow: hidden;
+}
+
+.card-customer {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    border-top: 5px solid #1d7ade;
+    border-radius: 10px;
+}
+
+.dt-search {
+    float: right;
+}
+
+.dt-search label {
+    margin-right: 5px;
+}
+
+.dt-search input {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.centered-row td,
+.centered-row th,
+.centered-header th {
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+tr {
+    border: 1px solid #ccc;
+}
+
+#notaTable {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: #313131;
+}
+
+.btn-danger {
+    color: #fff;
+}
+
+.detail-row {
+    display: none;
+}
+
+.card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: 1.25rem;
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.card2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 1.8;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+tbody tr {
+    background-color: #ffffff;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+#notaTable td:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.button-group .btn,
+.left-section .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button-group .btn-primary,
+.left-section .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.button-group .btn-primary:hover,
+.left-section .btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.button-group .btn-primary:focus, 
+.button-group .btn-primary.focus,
+.left-section .btn-primary:focus, 
+.left-section .btn-primary.focus {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #004085;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+}
+
+.button-group .btn-primary.disabled, 
+.button-group .btn-primary:disabled,
+.left-section .btn-primary.disabled, 
+.left-section .btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.button-group .btn-primary:not(:disabled):not(.disabled):active, 
+.button-group .btn-primary:not(:disabled):not(.disabled).active,
+.button-group .show > .btn-primary.dropdown-toggle,
+.left-section .btn-primary:not(:disabled):not(.disabled):active, 
+.left-section .btn-primary:not(:disabled):not(.disabled).active,
+.left-section .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+.button-group .btn-primary:not(:disabled):not(.disabled):active:focus, 
+.button-group .btn-primary:not(:disabled):not(.disabled).active:focus,
+.button-group .show > .btn-primary.dropdown-toggle:focus,
+.left-section .btn-primary:not(:disabled):not(.disabled):active:focus, 
+.left-section .btn-primary:not(:disabled):not(.disabled).active:focus,
+.left-section .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    display: none;
+}
+/*=============================================
+                Pembeli design and
+    =========================================*/
+
+
+
+
+   
+    #notaTable {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #notaTable th,
+    #notaTable td {
+        padding: 8px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    #notaTable thead {
+        background-color: #f4f4f4;
+    }
+
+    #notaTable tfoot {
+        background-color: #eaeaea;
+    }
+
+    .inner-container {
+        overflow: hidden;
+    }
+
+    @media screen and (max-width: 768px) {
+        #notaTable thead,
+        #notaTable tfoot {
+            display: none;
+        }
+
+        #notaTable,
+        #notaTable tbody,
+        #notaTable tr {
+            display: block;
+            width: 100%;
+        }
+
+        #notaTable tr {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+
+        #notaTable td {
+            display: block;
+            text-align: left;
+            padding: 10px;
+            border: none;
+            position: relative;
+        }
+
+        #notaTable td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding: 10px;
+            font-weight: bold;
+            background: #f4f4f4;
+            border-right: 1px solid #ddd;
+        }
+
+        #notaTable td:last-child {
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    .card-kalkulator {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #e0e0e0;
+    }
+
+    .table-container {
+        max-width: 100%;
+        max-height: 400px;
+        overflow: auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .table-container table {
+        width: 100%;
+        table-layout: auto;
+    }
+
+    .page-header {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .page-header h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+    }
+
+    footer .text-muted {
+        transform: translateX(100px);
+    }
+
+    .container-select {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .select-kayu {
+        order: 2;
+    }
+
+    .element-sebelum-select {
+        order: 1;
+    }
+
+
+
+
+
+/*=============================================
+                Footer
+    =========================================*/
+footer {
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+footer .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer .text-muted {
+    color: #4d4d4d;
+    font-size: 14px;
+}
+/*=============================================
+               Footer and
+    =========================================*/

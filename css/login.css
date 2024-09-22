@@ -1,0 +1,324 @@
+
+/* CSS UNTUK => LOGIN ( LOGIN.PHP ) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    background: #f4f4fc;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.side-image{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg1.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+.row{
+  width:  900px;
+  height:550px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0px;
+  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color: #fff;
+    font-size: 40px; 
+    font-weight: bold;
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input-box{
+  width: 330px;
+  box-sizing: border-box;
+}
+img{
+    width: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-bottom: 18px;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}
+.logo-container img {
+    max-width: 100%; 
+    display: block; 
+    margin-bottom: 10px; 
+}
+header {
+    text-align: center; 
+    font-size: 24px; 
+    color: #333; 
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+    margin-bottom: 40px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field input:focus ~ label
+   {
+    top: -10px;
+    font-size: 13px;
+  }
+  .input-field input:valid ~ label
+  {
+   top: -10px;
+   font-size: 13px;
+   color: #5d5076;
+ }
+ .input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #0074b2;
+ }
+ .submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+ }
+ .submit:hover{
+    background: rgba(251, 180, 0, 0.937);
+    color: #fff;
+    font-weight: bold;
+ }
+ .signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: #000;
+    margin-top: 10px;
+}
+.left{
+    display: flex;
+}
+label a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+}
+.alert {
+    display: none;
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+    font-size: 14px;
+}
+.bottom {
+    padding-top: 1px; 
+    padding-bottom: 30px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bottom .left {
+    display: flex;
+    align-items: center; 
+}
+.left label {
+    margin-left: 8px; 
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 13px; 
+}
+.username-field {
+    margin-bottom: 30px; 
+}
+#login_remember {
+    width: 13px; 
+    height: 13px;
+    appearance: none; 
+    background-color: #fff;
+    border-radius: 2px; 
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.2); /* Efek 3D */
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#login_remember:checked {
+    background-color: #4294f2; 
+    border-color: #4294f2; 
+}
+#login_remember:checked::after {
+    content: '✔'; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px; 
+    color: white;
+}
+.loading {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #c7c7c7;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+.side-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333; 
+    color: white; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+.side-image h1 {
+    font-weight: bold;
+    font-size: 42px; 
+    margin-bottom: 10px;
+}
+.side-image p {
+    font-size: 13px; 
+
+}
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+    font-size: 13px;
+}
+.close-btn {
+    cursor: pointer;
+    font-size: 26px; 
+}
+#error-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px
+}
+
+
+
+
+
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+
+    }
+    img{
+        width: 60px;
+        top: 0x;
+        left: 0;
+        right:0 ;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        
+    }
+    .text i{
+        font-size: 9px;
+        
+    }
+    .row{
+        max-width:420px;
+        width: 100%;
+    }
+}
